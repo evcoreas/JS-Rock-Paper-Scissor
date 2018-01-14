@@ -1,5 +1,7 @@
+var computerChoice
 
-var computerChoice = Math.floor((Math.random() * 3 + 1));
+function makeComputerChoice(){
+ computerChoice = Math.floor((Math.random() * 3 + 1));
   if(computerChoice == 1){
     computerChoice = "rock";
   }
@@ -9,8 +11,10 @@ var computerChoice = Math.floor((Math.random() * 3 + 1));
   else{
     computerChoice = "scissors";
   }
+  console.log(computerChoice)
+}
 //this is what the computer chose
-console.log(computerChoice)
+
 
 
 var playersChoice
